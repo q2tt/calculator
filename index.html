@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Banks management page</title>
+</head>
+<body>
+    <div class="contain">
+        <div class="form">
+            <h2>Enter information:</h2>
+            <div class="form-pos">
+                <form action="" class="form1">
+                    <div class="form-left">
+                            <input type="text" placeholder="Bank name">
+                            <input type="text" class="rate " placeholder="Interest rate">
+                            <input type="text" class="max-sum " placeholder="Maximum loan">
+                        
+                    </div>
+                    <div class="form-right">
+                        <input type="text" class="min-sum " placeholder="Minimum down payment"> 
+                        <input type="text" class="term " placeholder="Loan term (monthts)">  
+                        <input type="button" onclick="addUser()" class="btn-save" value="SAVE">
+                    
+                    </div>
+                </form>
+            </div>
+            <div class="table">
+                <h2>Your information:</h2>
+                <table class="tb">
+                    <tr class="tr">
+                        <td>Bank</td>
+                        <td>Interest rate</td>
+                        <td>Maximum loan</td>
+                        <td>Minimum down payment</td>
+                        <td>Loan term</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </table>
+            </div>
+            <button class="go"><a href="page2.html">CALCULATE PAYMENT</a></button>
+        </div>
+       
+
+    <script src="script.js"></script>
+</body>
+</html>

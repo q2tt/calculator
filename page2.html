@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Mortgage calculator page</title>
+</head>
+<body>
+    <div class="contain">
+        <div class="form">
+            <h2>Enter information</h2>
+            <div class="form-pos">
+                <form action="" class="form2">
+                    <div class="form-left">
+                        <input type="text" placeholder="Initial loan">
+                        <input type="text" placeholder="Down payment">
+                        
+                    </div>
+                    <div class="form-right">
+                        <input type="button" onclick="choose()" class="choose-b" value="choose a bank">
+                        <select class="select none" onchange='findOption(this)'>
+                            <option >choose...</option>
+                          </select> 
+                        <input type="button" onclick="count()" class="btn-count" value="COUNT">
+                    </div>
+                </form>
+            </div>
+            <div class="plan">
+                <p class="err"></p>
+                <div class="super none">
+                    <p>Super! You can get a loan!</p>
+                    <p>Loan term: <span class="credit-term"></span></p>
+                    <p>Monthly mortgage payment: <span class="credit-pay"></span></p>
+                </div>
+                
+            </div>
+            <button class="go"><a href="index.html">GO BACK</a></button>
+        </div>
+    </div>
+    
+    <script src="script2.js"></script>
+</body>
+</html>
